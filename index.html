@@ -1,189 +1,74 @@
 <html>
-	<head>
-		<title>2</title>
-		
-		<!--<style type="text/css"> 
-			.kh {font-family:khmer OS; font-size:20px;text-align:center;color:red;}   
-			en{font-family:"Time New Roman"; font-size:14px;}
-		</style> -->
-		<style>
-		
-		
-	ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #333;
-    font-family:"Khmer OS Battambang"
+<head><title>Home Page</title>
+<style>
+
+
+@keyframes slider {
+
+0% {
+	left: 0;
 }
 
-li {
-    float: left;
+20% {
+	left: 0;
 }
 
-li a, .dropbtn {
-    display: inline-block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
+25% {
+	left: -100%;
 }
 
-li a:hover, .dropdown:hover .dropbtn {
-    background-color: red;
+45% {
+    left: -100%;
+
 }
 
-li.dropdown {
-    display: inline-block;
+50% {
+		left: -200%;
+
 }
 
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f9f9f9;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+70% {
+	left: -200%;
 }
 
-.dropdown-content a {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-    text-align: left;
+75% {
+	left: -300%;
 }
 
-.dropdown-content a:hover {background-color: #f1f1f1}
-
-.show {display:block;}	
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		h5{
-	text-align:center;
-	font-family:"Khmer OS Muol Light";
-	color:red;
-	font-size:15px;
-	
-}
-.button {
-    background-color: #4CAF50; /* Green */
-    border: none;
-    color: white;
-    padding: 10px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 3px 2px;
-    -webkit-transition-duration: 0.4s; /* Safari */
-    transition-duration: 0.4s;
-    cursor: pointer;
+95% {
+	left: -300%;
 }
 
-.button1 {
-    background-color: white; 
-    color: blue; 
-    border: 2px solid #4CAF50;
-}
-.button1:hover {
-    background-color: #4CAF50;
-    color: white;
+100% {
+	left: -400%;
+
 }
 
-
-
-.city {
-   float: left;
-   margin: 5px;
-   padding: 10px;
-   width: 45%;
-   height: 250px;
-   border-color: red blue yellow green;
-   border-style: solid;
-}   
-
-h2{
-	color:red;
-	font-size:17px;
-	font-family:"Khmer OS Muol Light"
 }
-h2:hover{
+
+#slider {
+	overflow: hidden;
+}
+
+#slider figure img {
+	width: 20%;
+	float: left;
+}
+
+#slider figure {
+	position: relative;
+	width: 500%;
+	margin: 0;
+	left: 0;
+	text-align: left;
+	font-size: 0;
+	animation: 20s slider infinite; 
+
+}
+	.d3 {
 	color:blue;
-}
-p{
-	font-family:"Khmer OS Battambang"
-}
-
-
-div.table{
-    width: 100%;
-	font-size:5px;
-	margin-left:5px;
-	padding-top:5px;
-	adding-bottom:5px;
-	margin-top:10px;
-	float:left;
-	border:5px inset red;
-
-	
-}
-a{text-decoration:none;}
-p.history{
-		max-width:50%;
-		height:auto;
-		border:3px solid red;
-		padding-left:20px;
-		padding-top:20px;
-		background-color:cyan;
-		font-family:"Khmer OS Muol Light"
-}
-.album_photos{
-	width:100%;
-	text-align:center;
-	margin:0 auto;
-	}
-.img{
-margin-left:5px;
-padding-top:5px;
-padding-bottom:5px;
-margin-top:10px;
-float:center;
-border:5px inset red;
-
-}
-.img{
-	opacity:1.0;
-}
-.img:hover{
-	opacity:0.4;
-}
-.p1{ 
-	width:100%; 
-	border-collapse: collapse;
-	text-align:center;
-	font-family:Sans-serif;
-	height:20px;
-	font-size:15px;
-}
-a:hover{
-	background-color:#111;
-}*/
-	
-.d3 {
-	color:blue;
-	font-family:"Khmer OS Muol Light";
-	text-shadow: 0 1px 0 #ccc,
+font-family:"Khmer OS Muol Light";
+  text-shadow: 0 1px 0 #ccc,
                0 2px 0 #c9c9c9,
                0 3px 0 #bbb,
                0 4px 0 #b9b9b9,
@@ -196,81 +81,30 @@ a:hover{
                0 10px 10px rgba(0,0,0,.2),
                0 20px 20px rgba(0,0,0,.15);
 }
-
-
-
-.sh { 
-			color: blue; 
-			font: bold 15px Helvetica,"Khmer OS Muol Light", Arial, Sans-Serif;
-			text-shadow: 1px #060dd8;
-			text-shadow: 1px #060dd8;
-		     -webkit-transition: all 0.12s ease-out;
-		     -moz-transition: all 0.12s ease-out;
-		     -o-transition: all 0.12s ease-out;
-		}
-		.sh:hover {
-		    text-shadow: 1px 1px #ff4c82, 2px 2px #ff4c82, 3px 3px #ff4c82, 4px 4px #ff4c82, 5px 5px #02a2fe, 6px 6px #02a2fe;	
-			
-			
-			
-		</style>
+</style> 
 </head>
 <body>
-
-<ul class="menu">
-  <li><a class="active" href="..\Project\homepage.html">ទំព័រដើម</a></li>
-  <li class="dropdown">
-    <a href="javascript:void(0)" class="dropbtn" onclick="myFunction()">មាតិការ</a>
-    <div class="dropdown-content" id="myDropdown">
-		<a href="..\Project\Contane\c1.html">១.មូលសង្ខប</a>
-		<a href="..\Project\Contane\c2.html">២.ការវិភាគទីផ្សារ</a>
-		<a href="..\Project\Contane\c3.html">៣.ការពណ៍នាខ្លីៗពីអាជីវកម្ម</a>
-		<a href="..\Project\Contane\c4.html" >៤.ការគ្រប់គ្រង  និងជ្រើសរើសបុគ្គលិក</a>
-		<a href="..\Project\Contane\c5.html" >៥. ផែនការទីផ្សារ </a> 
-		<a href="..\Project\Contane\c6.html">៦. ផែនការដំណើរការអាជីវកម្ម </a>
-		<a href="..\Project\Contane\c7.html">៧. ផែនការហិរញ្ញវត្ថុ</a>
-		<a href="..\Project\Contane\c8.html">៨. គំរោងលើការប្រើប្រាស់ថវិកា</a>
-		<a href="..\Project\Contane\c9.html">៩. របាយការណ៍ប្រាក់ចំណេញ </a>
-		<a href="..\Project\Contane\c10.html">១០. របាយការណ៍លំហូរបេឡា</a> 
-
-    </div>
-	<li><a href="..\Project\game\game.html">ហ្គេម</a></li>
-	  <li><a href="..\Project\contac us.html">ទំនាក់ទំនាង</a></li>
-	   <li><a href="..\Project\about us.html">អំពីយើង</a></li>
-  </li>
-</ul>
-<script>
-function myFunction() {
-    document.getElementById("myDropdown").classList.toggle("show");
-}
-window.onclick = function(e) {
-  if (!e.target.matches('.dropbtn')) {
-
-    var dropdowns = document.getElementsByClassName("dropdown-content");
-    for (var d = 0; d < dropdowns.length; d++) {
-      var openDropdown = dropdowns[d];
-      if (openDropdown.classList.contains('show')) {
-        openDropdown.classList.remove('show');
-      }
-    }
-  }
-}
-</script>
-<h5><b>សម៉ាជិកក្រុមទី១</b></h5>
-<p align=center><b>ប្រធានបទ៖ គំរោងអាជីវកម្មអ៊ីនធើណែត</b></p>
-<p>
-<table width=100%>
-<tr style=color:blue;>
-	<th>កែវ ជុំ </th>
-	<th> ឃឺន វិសាល</th>
-	<th> សួន សុភី</th>
-	<th> ឆាត សំបុក</th>
-	<th> រី ថាវី</th>
-	<th> ហាប់ ហុន</th>
+	<table width="100%" border="0" >
+		<tr>
+			<td style="background-color:#cc99ff" width="19%"><a href="D:\Project\homepage.html" target="show"><img src="..\Project\Photos\logo.png" width="70%" height="19%"></a>
+		</td>
+		<td width="50%">
+	<div id="slider" >
+	<figure>
+		<img src="..\Project\Photos\logo2016.png" width="70%" height="40%" >
+		<img src="..\Project\Photos\11.jpg" width="70%" height="40%" >
+		<img src="..\Project\Photos\22.jpg" width="70%" height="40%" >
+		<img src="..\Project\Photos\33.jpg" width="70%" height="40%" >
+		<img src="..\Project\Photos\44.jpg" width="70%" height="40%" >
+	</figure>	
+</td>
+	<td bgcolor="#cc99ff"class="d3" width="30%">
+	<marquee align="right" direction="down"width="100%" height="70%" behavior="alternate">
+		<marquee behavior="alternate">គម្រោងអាជីវកម្មសេវាកម្មអ៊ិធើណេត<br>
+	</marquee>
+</marquee>
+</td>
 </tr>
-
 </table>
-</p>
-<img src="..\Project\Photos\f11.jpg" width="100%"height= "480px">
 </body>
 </html>
